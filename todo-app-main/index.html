@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+  <div id="container">
+    <div id="title">
+      <h1>T O D O</h1>
+      <button id="ampmbtn">
+      <img id= "ampmbtnImg" src="images/icon-sun.svg">
+    </button>
+    </div>
+    <div class ="box"  id="currtyping">
+      <button class= "tdlistbtn" id="tdbtn">
+      </button>
+      <input id="currtypingtext"  placeholder="Create a new todo..." >
+    </div>
+      <div class ="box" id="todolist">
+        <table id = "dataTable">
+        </table>
+          <div id = "bottomdiv">
+            <div id="itemleft">
+              <span id="rowCount">
+                0 items left
+              </span>
+            </div>
+            <div id ="pages">
+            <button class="btn active" id="all">All</button>
+            <button class="btn" id="active">Active</button>
+            <button class="btn" id="completed">Completed</button>
+          </div>
+          <button id="clearCompleted">Clear Completed</button>
+      </div>
+    </div>
+<p id = "end">Drag and drop to reorder list</p>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>

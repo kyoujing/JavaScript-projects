@@ -1,0 +1,304 @@
+body {
+    background: url(images/bg-desktop-dark.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: contain;
+    transition: 0.3s ease;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 5% auto;
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#title h1{
+    margin: 0;
+    color: white;
+    font-weight: bolder;
+    text-wrap:nowrap;
+    font-size: 40px;
+}
+
+#ampmbtn {
+    all: unset;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#currtyping {
+    display: flex;
+    text-wrap: nowrap;
+    height: 50px;
+    background-color: rgb(90, 86, 86);
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-top: 5%;
+    padding: 0 12px;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#currtyping .tdlistbtn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+
+#currtyping #currtypingtext {
+    all: unset;
+    padding-left: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: rgb(170, 170, 170);
+}
+
+#todolist {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(90, 86, 86);
+    margin-top: 5%;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tr {
+    transition: background-color 0.5s;
+}
+
+td {
+    border-bottom: 2px solid gray;
+    color: rgb(170, 170, 170);
+    font-size: 18px;
+    padding: 10px 10px 10px;
+}
+
+#dataTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#dataTable td .circle-btn {
+    width: 30px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon-check {
+    width: 30px;
+    height: 30px;
+    border-radius: 16px;
+    background-color: rgb(159, 206, 206);
+}
+
+span {
+    padding-left: 12px;
+
+}
+
+.delete-btn {
+    all: unset;
+    height: 20px;
+    position: absolute;
+    right: 28%;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid gray;
+}
+
+#bottomdiv { 
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#itemleft {
+    padding-left: 2px;
+    background-color: transparent;
+    color: gray;
+}
+
+#pages {
+    margin: auto;
+}
+
+.btn {
+    all: unset;
+    padding-right: 10px;
+    height: 5%;
+    font-weight: bolder;
+    background-color: transparent;
+    color: gray;
+}
+
+.btn.active {
+    color: rgb(53, 140, 168);
+}
+.btn:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+#clearCompleted {
+    all: unset;
+    background-color: transparent;
+    color: gray;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#clearCompleted:hover {
+    color: red;
+}
+
+#end {
+    text-align: center;
+    color: gray;
+}
+
+.hidden {
+    display: none;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-repeat: no-repeat;
+        background-color: black;
+        background-size: contain;
+        transition: 0.3s ease;
+    }
+    
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 5% auto;
+    }
+    
+    #title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #title h1{
+        margin-top: 5%;
+        color: white;
+        font-weight: bolder;
+        text-wrap:nowrap;
+        font-size: 30px;
+    }
+    #ampmbtn {
+        margin-top: 5%;
+    }
+    
+    #currtyping {
+        margin-top: 10%;
+        height: 40px;
+    }
+    
+    #currtyping .tdlistbtn {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #currtyping #currtypingtext {
+        padding-left: 12px;
+        font-size: 18px;
+    }
+    
+    ::placeholder {
+        font-weight: lighter;
+    }
+    
+    #todolist {
+        margin-bottom: 20px;
+    }
+
+    #dataTable td .circle-btn {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .icon-check {
+        width: 20px;
+        height: 20px;
+    }
+    
+    span {
+        padding-left: 14px;
+    }
+    
+    .delete-btn {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: 13%;
+    }
+    
+    #itemleft {
+        padding-left: 0;
+    }
+    
+    #pages {
+        position: fixed;
+        width: 85%;
+        height: 30px;
+        margin-top: 50px;
+        padding-top: 15px;
+        border: 2px solid gray;
+        border-radius: 6px;
+        text-align: center;
+        }
+    
+    .btn {
+        all: unset;
+        padding-right: 10px;
+        height: 5%;
+        font-weight: bolder;
+        background-color: transparent;
+        color: gray;
+    }
+    
+    #clearCompleted {
+        position: fixed;
+        right: 10%;
+    }
+
+    #clearCompleted:hover {
+        color: gray;
+    }
+    
+    .btn:hover {
+        color: rgb(53, 140, 168);
+ 
+    }
+    #end {
+        margin-top: 80px;
+    }
+  }
