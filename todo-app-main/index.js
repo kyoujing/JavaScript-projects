@@ -104,8 +104,6 @@ tdBtn.addEventListener('click', ()=> {
     newTodo.setAttribute("draggable", "true");
 
     const actionCell = document.createElement('td');
-    actionCell.style.display = 'flex';
-    actionCell.style.alignItems = 'center';
 
     const button = document.createElement('button');
     button.className = 'circle-btn';

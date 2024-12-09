@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 #title h1{
     margin: 0;
     color: white;
@@ -84,6 +85,8 @@ tr {
 }
 
 td {
+    display: flex;
+    align-items: center;
     border-bottom: 2px solid gray;
     color: rgb(170, 170, 170);
     font-size: 18px;
@@ -206,6 +209,7 @@ span {
         justify-content: space-between;
         align-items: center;
     }
+
     #title h1{
         margin-top: 5%;
         color: white;
@@ -213,6 +217,7 @@ span {
         text-wrap:nowrap;
         font-size: 30px;
     }
+
     #ampmbtn {
         margin-top: 5%;
     }
@@ -293,11 +298,7 @@ span {
     #clearCompleted:hover {
         color: gray;
     }
-    
-    .btn:hover {
-        color: rgb(53, 140, 168);
- 
-    }
+
     #end {
         margin-top: 80px;
     }
