@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="calc.css">
+  <title>Frontend Mentor | Calculator app</title>
+</head>
+<body>
+  <div id="container">
+    <div id="top">
+      <h1>calc</h1>
+        <p>THEME</p>
+        <div id="slider-container">
+          <div class="labels">
+            <span data-value ="1">1</span>
+            <span data-value ="2">2</span>
+            <span data-value ="3">3</span>
+            </div>
+            <input type="range" id="slider" min="1" max="3" step="1" value="1">
+            </div>
+          </div>
+          <table id ="calculator">
+            <tr id="resultTable">
+            <td id="result">
+            </td>
+          </tr>
+          <tr class="btnBox" id="btns">
+            <td class="box" id="btnRow1">
+              <button class="btn" value="7" id="seven" onclick="onClick(7)">7</button>
+              <button class="btn" value="8" id="eight" onclick="onClick(8)">8</button>
+              <button class="btn" value="9" id="nine"  onclick="onClick(9)">9</button>
+              <button class="btn" value=""  id="delete" onclick="del()">DEL</button>
+            </td>
+            <td class="box" id="btnRow2">
+              <button class="btn" value="4" id="four" onclick="onClick(4)">4</button>
+              <button class="btn" value="5" id="five" onclick="onClick(5)">5</button>
+              <button class="btn" value="6" id="six" onclick="onClick(6)">6</button>
+              <button class="btn" value="+" id="plus" onclick="onClick('+')">+</button>
+            </td>
+            <td class="box" id="btnRow3">
+              <button class="btn" value="1" id="one" onclick="onClick(1)">1</button>
+              <button class="btn" value="2" id="two" onclick="onClick(2)">2</button>
+              <button class="btn" value="3" id="three" onclick="onClick(3)">3</button>
+              <button class="btn" value="-" id="minus" onclick="onClick('-')">-</button>
+            </td>
+           <td class="box" id="btnRow4">
+              <button class="btn" value="." id="point" onclick="onClick('.')">.</button>
+              <button class="btn" value="0" id="zero" onclick="onClick(0)">0</button>
+              <button class="btn" value="/" id="divide" onclick="onClick('/')">/</button>
+              <button class="btn" value="*" id="multiply" onclick="onClick('*')">x</button>
+          </td>
+           <td class="box" id="btnRow5">
+              <button class="btn" value=""  id="reset" onclick="reset()">RESET</button>
+              <button class="btn" value="=" id="equal" onclick="evaluateResult()">=</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  <script src="calc.js"></script>
+</body>
+</html>

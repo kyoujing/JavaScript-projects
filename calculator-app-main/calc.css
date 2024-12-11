@@ -1,0 +1,291 @@
+body, body.theme-1 {
+    background-color: #063a52;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+body.theme-2 {
+    background-color: #FFFFF4;
+}
+
+body.theme-3 {
+    background-color: #380564;
+}
+
+#container {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+h1, h1.theme-1 {
+    color: white;
+    margin-top: 10%;
+}
+
+h1.theme-2 {
+    color: black;
+}
+
+h1.theme-3 {
+    color: rgba(153, 182, 25, 0.808);
+}
+
+p, p.theme-1 {
+    margin-top: 9%;
+    margin-left: 60%;
+    padding-right: 10px;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+
+}
+
+p.theme-2 {
+    color: black;
+}
+
+p.theme-3 {
+    color: rgba(184, 219, 29, 0.808);
+}
+
+#slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+
+#slider {
+    width: 100%;
+    appearance: none;
+    background: rgba(39, 20, 31, 0.301);
+    border-radius: 8px;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(226, 67, 27) ;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#slider.theme-2::-webkit-slider-thumb {
+    background: rgb(255, 115, 80) ;
+}
+
+#slider.theme-3::-webkit-slider-thumb {
+    background: rgb(25, 208, 214) ;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.labels span,.labels span.theme-1{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.labels span.theme-2{
+    color: black;
+}
+
+.labels span.theme-3{
+    color: rgba(153, 182, 25, 0.808);
+}
+
+#calculator {
+    margin-top: 15px;
+}
+
+#result, #result.theme-1 {
+    height: 80px;
+    background-color: rgba(39, 20, 31, 0.301);
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: end;
+    padding-top: 6px;
+    padding-right: 3%;
+    border-radius: 8px;
+}
+
+#result.theme-2 {
+    color: black;
+}
+
+#result.theme-3 {
+    color: rgba(153, 182, 25, 0.808);
+}
+
+#btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 390px;
+    height: 275px;
+    margin-top: 20px;
+    background-color: rgba(39, 20, 31, 0.301);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.btn,.btn.theme-1 {
+    width: 80px;
+    height: 40px;
+    font-size: 23px;
+    font-weight: bolder;
+    background-color: #EDEADE;
+    border-color: transparent;
+    border-bottom: 4px solid rgb(170, 130, 130);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn.theme-2 {
+    background-color: #F0EAD6;
+    border-bottom: 4px solid rgba(121, 54, 10, 0.507);
+}
+
+.btn.theme-3 {
+    color: rgba(153, 182, 25, 0.808);
+    border-bottom: 4px solid rgba(168, 8, 107, 0.699);
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+#delete, #reset, #delete.theme-1, #reset.theme-1 {
+    color: white;
+    font-size: large;
+    background-color: rgb(51, 126, 161);
+    padding-top: 3px;
+}
+
+#delete.theme-2, #reset.theme-2 {
+    background-color: rgb(41, 147, 196);
+
+}
+
+#delete.theme-2:hover, #reset.theme-2:hover{
+    background-color: rgb(51, 180, 240);
+}
+
+
+#delete.theme-3, #reset.theme-3 {
+    background-color: #6208b1;
+}
+
+#delete.theme-3:hover, #reset.theme-3:hover{
+    background-color: #812eca;
+}
+
+#delete:hover,#reset:hover {
+    background-color: rgb(78, 131, 180);
+}
+
+
+#reset{
+    width: 180px;
+}
+
+#equal, #equal.theme-1 {
+    width: 180px;
+    color: white;
+    font-size: large;
+    background-color: rgb(226, 67, 27);
+}
+
+#equal:hover, #equal.theme-1:hover{
+    background-color: rgb(197, 59, 35);
+}
+
+#equal.theme-2 {
+    background-color: rgb(255, 115, 80);
+}
+
+#equal.theme-2:hover{
+    background-color: rgb(236, 134, 109);
+}
+
+#equal.theme-3 {
+    color: black;
+    background-color: rgb(25, 208, 214);
+}
+
+#equal.theme-3:hover{
+    background-color: rgb(66, 249, 255);
+}
+
+
+#btnRow1, #btnRow2, #btnRow3, #btnRow4, #btnRow5 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#btnRow1 button, #btnRow2 button, #btnRow3 button, #btnRow4 button, #btnRow5 button {
+    margin: 5px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #top {
+        width: 275px;
+    }
+
+    h1{
+        padding-top: 3%;
+
+    }
+
+    p, p.theme-1 {
+        margin-top: 13%;
+        margin-left: 35%;
+        padding-right: 10%;
+    }
+
+    #slider {
+        width: 60px;
+    }
+    
+    .labels {
+        width: 60px;
+    }
+
+    #btns {
+        width: 280px;
+        height: 360px;
+    }
+
+    .btn,.btn.theme-1 {
+        width: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+}
