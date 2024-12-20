@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+  <div id="container">
+    <header id="navContainer">
+      <div id="navbar">
+        <a href="#"><img id="logo" src="images/logo.svg" alt="Company Logo"></a>
+        <ul>
+          <li><a class="navSite" href="#">Collections</a></li>
+          <li><a class="navSite" href="#">Men</a></li>
+          <li><a class="navSite" href="#">Women</a></li>
+          <li><a class="navSite" href="#">About</a></li>
+          <li><a class="navSite" href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div id="profile">
+        <a id="cart" href="#"><img id="cartImg" src="images/icon-cart.svg" alt="Cart" onclick="openCart()">
+        </a>
+        <a id="avatar"><img id="avatarImg" src="images/image-avatar.png" alt="User Avatar"></a>
+      </div>
+      <div id="cartList">
+        <span id="cartTitle">Cart 
+          <img src="images/icon-close.svg" onclick="closeCart()">
+        </span>
+        <div id="productContainer">
+          <div id="product">
+        </div>
+        </div>
+    <span id="checkout">Checkout</span>
+  </div>
+      </header>
+      <main id="item">
+        <section id ="itemImgs">
+          <img id="mainImg" src="images/image-product-1.jpg" onclick="openLightbox()">
+          <div id="gallery">
+            <img class="itemImg" src="images/image-product-1-thumbnail.jpg" onclick="changeMainImg(0) ">
+            <img class="itemImg" src="images/image-product-2-thumbnail.jpg" onclick="changeMainImg(1)">
+            <img class="itemImg" src="images/image-product-3-thumbnail.jpg" onclick="changeMainImg(2)">
+            <img class="itemImg" src="images/image-product-4-thumbnail.jpg" onclick="changeMainImg(3)">
+          </div>
+          <div id="lightbox" class="lightbox">
+            <div id="lightbox-inner">
+            <span class="close" onclick="closeLightbox()"><img src="images/icon-close.svg"></span>
+            <span class="prev" onclick="changeImage(-1)"><img src="images/icon-previous.svg"></span>
+            <img id="lightbox-img" class="lightox-img" src="">
+            <span class="next" onclick="changeImage(1)"><img src="images/icon-next.svg"></span>
+            </div>
+            <div id="thumbnails" class="thumbnails">
+              <img class="thumb" src="images/image-product-1-thumbnail.jpg" onclick="openImage(0)">
+              <img class="thumb" src="images/image-product-2-thumbnail.jpg" onclick="openImage(1)">
+              <img class="thumb" src="images/image-product-3-thumbnail.jpg" onclick="openImage(2)">
+              <img class="thumb" src="images/image-product-4-thumbnail.jpg" onclick="openImage(3)">
+            </div>
+          </div>
+          </section>
+           <section id="itemDescription">
+            <span>SNEAKER COMPANY</span>
+            <h1 id="productName">Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+             durable rubber outer sole, they`ll withstand everything the weather can offer.</p>
+              <div id="price">
+              <span id="currentPrice">$125.00</span>
+              <span id="discount">50%</span>
+              <span id="preciousPrice">$250.00</span>
+            </div>
+            <div id="addItems">
+              <div id="counter">
+                <button id="decrement"><img src="images/icon-minus.svg"></button>
+                <span id = number>0</span>
+                <button id="increment"><img src="images/icon-plus.svg"></button>
+              </div>
+              <button id="addToCart" onclick="addToCart()"><img src="images/icon-cart.svg">Add to cart</button>
+            </div>
+          </section>
+        </main>
+        </div>
+      <script src="index.js"></script>
+</body>
+</html>
