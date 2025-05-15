@@ -623,13 +623,10 @@ div#counter {
     }
     
     span#discount{
-        position: fixed;
         width: 60px;
         height: 25px;
         font-size: 20px;
-        left: 30%;
-        margin-left: 0;
-        padding-top: 0;
+        margin-left: -35%;
         border-radius: 6px;
     }
     
